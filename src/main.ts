@@ -29,7 +29,11 @@ async function bootstrap() {
   app.use(
     '/reference',
     apiReference({
+      theme: 'elysiajs',
+      layout: 'modern',
+      hideClientButton: true,
       content: document,
+     persistAuth:true,
     }),
   );
 
